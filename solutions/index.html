@@ -6,6 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
   </head>
-  <body></body>
-  <script src="./day-01/level2.js"></script>
+  <body>
+    <div>
+      <input
+        type="number"
+        placeholder="YYYY"
+        min="1900"
+        max="2100"
+        id="year"
+      />年
+      <input type="number" placeholder="mm" min="1" max="12" id="month" />月
+      <p>此月份有<em id="todate" style="color:red;">幾</em>天.</p>
+      <button onclick="exercise()">查詢</button>
+    </div>
+  </body>
+  <script src="./day-01/level3.js"></script>
 </html>
