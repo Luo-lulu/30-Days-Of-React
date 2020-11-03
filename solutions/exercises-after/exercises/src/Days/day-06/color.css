@@ -1,0 +1,12 @@
+.color__card {
+  margin: 1px;
+  color: #ffffff;
+  display: inline-block;
+  text-align: center;
+  line-height: 100px;
+  height: 100px;
+  width: 100px;
+}
+.color__line {
+  width: 900px;
+}
