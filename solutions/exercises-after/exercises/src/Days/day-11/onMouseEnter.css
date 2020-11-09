@@ -1,0 +1,9 @@
+.word {
+  width: 200px;
+  height: 100px;
+  background-color: cadetblue;
+  font-size: x-large;
+  font-weight: 600;
+  text-align: center;
+  line-height: 100px;
+}
