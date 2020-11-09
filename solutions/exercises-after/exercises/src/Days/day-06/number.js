@@ -2,34 +2,71 @@ import React from "react";
 import "./number.css";
 
 const numbers = [
-  [0, "even"],
-  [1, "odd"],
-  [2, "prime"],
-  [3, "odd"],
-  [4, "even"],
-  [5, "prime"],
-  [6, "even"],
-  [7, "prime"],
-  [8, "even"],
-  [9, "odd"]
+  0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19,
+  20
 ];
-const NumberPut = ({ number: [number, kind] }) => (
-  <li>
-    {number} {kind}
-  </li>
-);
+
+const isPrime = n => {
+  for (let i = 2; i < n / 2; i++) {
+    if (n % i === 0) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+};
+const bgColor = () => {
+  if (isPrime({ numbers })) {
+    return "red";
+  }
+};
 
 const Numbers = ({ numbers }) => {
-  const numbersList = numbers.map(number => (
-    <NumberPut numbers={numbers} key={number} />
-  ));
-  console.log(numbersList);
-  return <ul>{numbersList}</ul>;
+  const list = numbers.map(number => {
+    // const result = bgColor();
+    const colorStyle = {
+      background: bgColor()
+    };
+    return (
+      <div className="number__box" key={number} style={colorStyle}>
+        {number}
+      </div>
+    );
+  });
+  return list;
 };
+
+const NumberLine = () => {
+  return (
+    <div className="number__line">
+      <Numbers numbers={numbers} />
+    </div>
+  );
+};
+
 function Number() {
   return (
     <div className="App">
-      <Numbers numbers={numbers} />
+      <NumberLine />
     </div>
   );
 }

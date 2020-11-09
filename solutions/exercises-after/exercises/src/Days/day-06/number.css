@@ -1,3 +1,11 @@
-body {
-  margin: 0%;
+.number__box {
+  display: inline-block;
+  margin: 1px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+.number__line {
+  width: 800px;
 }

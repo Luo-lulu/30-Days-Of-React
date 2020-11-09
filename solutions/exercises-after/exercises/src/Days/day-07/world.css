@@ -1,0 +1,15 @@
+.country {
+  margin-top: 50px;
+  width: 500px;
+  margin: 0px auto;
+  text-align: center;
+  border: 1px solid lightslategray;
+}
+.country__img {
+  border: 1px solid black;
+  margin-top: 10px;
+  height: 300px;
+}
+.btn {
+  margin-left: 680px;
+}
