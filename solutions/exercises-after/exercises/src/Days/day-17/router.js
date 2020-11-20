@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Todolist from "../day-19/components/TodoList";
 import {
   BrowserRouter as Router,
   Route,
@@ -41,7 +42,11 @@ const MyInformation = ({
 //About Component
 const About = props => <h1 className="about__me">About Me...</h1>;
 //Portfoloio Component
-const Portfolio = props => <h1 className="my__portfolio">My Portfolio : </h1>;
+const Portfolio = props => (
+  <div className="my__portfolio">
+    <Todolist />
+  </div>
+);
 
 // LULU Component
 const UserCard = () => {
