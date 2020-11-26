@@ -1,0 +1,57 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+div {
+  display: inline-block;
+}
+span {
+  padding: 2px;
+}
+body,
+html {
+  text-align: center;
+  height: 100%;
+  background: #e4e5e6;
+  font-size: 1rem;
+  font-family: Poppins;
+  overflow-x: hidden;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-size: 120%;
+  font-family: "Roboto";
+  overflow-x: hidden;
+  height: 100%;
+  line-height: 1.5;
+  font-family: "Montserrat";
+  font-weight: 300;
+  color: #000;
+}
+.country_img {
+  height: 80px;
+  width: 120px;
+}
+.country {
+  max-width: 25rem;
+  min-width: 25rem;
+  text-align: center;
+  margin: 0.5rem;
+  padding: 2rem;
+  border-radius: 0.2rem;
+  background: #fff;
+}
+.country_flag {
+  text-align: center;
+  margin: auto;
+}
+.country_name {
+  font-size: 1.6rem;
+  color: orange;
+  letter-spacing: 0.075rem;
+  font-weight: bolder;
+  margin-bottom: 1rem;
+}
