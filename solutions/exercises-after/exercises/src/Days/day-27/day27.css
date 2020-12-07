@@ -1,0 +1,39 @@
+div {
+  display: inline-block;
+}
+.color__card {
+  color: white;
+  width: 100px;
+  height: 100px;
+
+  text-align: center;
+  padding: 30px;
+  font-size: 30px;
+}
+/* .copy:hover::before {
+  content: "copy";
+  padding: 10px 15px;
+  border-radius: 3px;
+  font-weight: 500;
+
+  /* position: relative;
+  left: 250px; */
+/* }  */
+.btn {
+  width: 90px;
+  height: 40px;
+}
+
+.wapper_copy:hover {
+  cursor: pointer;
+  /* color: rgb(61, 60, 60); */
+}
+.copy {
+  transition: all 5s;
+}
+.copy:hover::after {
+  position: relative;
+  left: 0px;
+  top: 30px;
+  content: "copy";
+}

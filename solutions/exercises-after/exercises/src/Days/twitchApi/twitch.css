@@ -1,0 +1,42 @@
+body {
+  /* background: url(https://lolstatic-a.akamaihd.net/lolkit/1.1.6/resources/images/bg-default.jpg)
+    no-repeat center;
+  background-attachment: fixed; */
+
+  margin: 0;
+  padding: 0;
+}
+h1,
+h3 {
+  text-align: center;
+  color: rgb(245, 245, 245);
+}
+
+.container {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+}
+.game__name {
+  color: seashell;
+}
+.col {
+  width: 300px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.col img {
+  width: 100%;
+}
+
+.information {
+  background: rgba(0, 0, 0, 0.507);
+}
+.nav {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5em;
+  text-align: center;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.nav_item {
+  color: white;
+}

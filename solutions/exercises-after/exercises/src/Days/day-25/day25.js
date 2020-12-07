@@ -1,18 +1,24 @@
 import React, { useState, useEffect, useRef } from "react";
 import useFetch from "./useFetch";
 import "./day25.css";
+import Loading from "./Loading";
 
 const Day25 = props => {
   const url = "https://restcountries.eu/rest/v2/all";
-  const data = useFetch(url);
+
+  const { isLoading, data } = useFetch(url);
+
   const [input, setInput] = useState("");
   const handleInputChange = e => {
     setInput(e.target.value);
   };
   const inputRef = useRef(null);
   useEffect(() => {
-    inputRef.current.focus();
+    if (inputRef.current) {
+      inputRef.current.focus();
+    }
   });
+
   const Country = ({ country: { name, flag, population, languages } }) => {
     return (
       <div className="country">
@@ -47,6 +53,9 @@ const Day25 = props => {
       />
     );
   };
+
+  if (isLoading) return <Loading />;
+
   //input 有內容就return這裡的東西
   if (input) {
     //如果input有內容 就把data裡符合input的物件放進newArr
